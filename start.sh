@@ -42,8 +42,8 @@ echo "nameserver 9.9.9.9" > /etc/resolv.conf
     >&2 echo "$json"
     exit 1
   fi
-} > /etc/wireguard/test.conf
-wg-quick up test
+} > /etc/wireguard/cyberghost.conf
+wg-quick up cyberghost
 
 while true
 do
