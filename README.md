@@ -1,5 +1,7 @@
 # CyberGhost WireGuard Client
 
+*First of all, your kernel must support wireguard, so head over to https://www.wireguard.com/install/ and install wireguard for your distribution.* 
+
 This docker container will allow you to create a VPN connection to CyberGhost WireGuard VPN servers.
 
 Get the current server list and your `device/token` from https://gen4.xyz
