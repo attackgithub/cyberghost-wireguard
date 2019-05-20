@@ -2,7 +2,7 @@
 
 This docker container will allow you to create a VPN connection to CyberGhost WireGuard VPN servers.
 
-Get your `device_id` and `token` from https://gen4.xyz
+Get the current server list and your `device/token` from https://gen4.xyz
 
 Usage:
 
