@@ -4,7 +4,7 @@ command="env | grep WG_SERVER_IP_PORT && \
   env | grep WG_DEVICE && 
   env | grep WG_TOKEN"
 
-if [ "$command" ]; then
+if [ ! "$command" ]; then
   echo "this script requires 3 env vars:"
   echo WG_SERVER_IP
   echo WG_DEVICE
@@ -14,7 +14,7 @@ fi
 
 echo "nameserver 9.9.9.9" > /etc/resolv.conf
 
-(
+{
   privKey="$(wg genkey)"
   export privKey
   pubKey="$( echo "$privKey" | wg pubkey)"
@@ -42,7 +42,7 @@ echo "nameserver 9.9.9.9" > /etc/resolv.conf
     >&2 echo "$json"
     exit 1
   fi
-) > /etc/wireguard/test.conf
+} > /etc/wireguard/test.conf
 wg-quick up test
 
 while true
