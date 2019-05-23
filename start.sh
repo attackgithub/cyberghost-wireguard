@@ -1,6 +1,6 @@
 #!/bin/bash
 
-command="env | grep WG_SERVER_IP_PORT && \
+command="env | grep WG_SERVER_IP && \
   env | grep WG_DEVICE && 
   env | grep WG_TOKEN"
 
