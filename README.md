@@ -1,4 +1,4 @@
-# CyberGhost WireGuard Client
+# [CyberGhost WireGuard Client](https://gitlab.com/gun1x/cyberghost-wireguard/)
 
 *First of all, your kernel must support wireguard, so head over to https://www.wireguard.com/install/ and install wireguard for your distribution.* 
 
