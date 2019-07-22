@@ -22,7 +22,7 @@ echo "nameserver 9.9.9.9" > /etc/resolv.conf
   json="$(curl -s -k -G \
     --user "${WG_DEVICE}:${WG_TOKEN}" \
     --data-urlencode "pubkey=$pubKey" \
-    "https://${WG_SERVER_IP}:31337/addKey" )"
+    "https://${WG_SERVER_IP}:1337/addKey" )"
   export json
   
   if [ "$(echo "$json" | jq -r '.status')" == "OK" ]; then
